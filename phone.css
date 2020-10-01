@@ -63,8 +63,15 @@ flex-direction: column;
 /* Utility Classes */
 .h-primary{
     font-size:1rem ;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .btn{
     font-size: 12px;
     padding: 4px 8px;
+}
+
+p {
+  font-family: 'Montserrat' , sans-Serif;
 }
