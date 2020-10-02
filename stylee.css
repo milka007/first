@@ -1,7 +1,12 @@
 /* CSS Reset */
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     height: 100%;
     width: 100%;
+    font-family: 'Montserrat' Sans-Serif;
 }
 *{
     margin:0;
@@ -42,14 +47,16 @@ margin: 10px 34px;
 }
 #navbar::before{
     content: "";
-    background-color: black;
+    background-color: #f3ffa8;
     position: absolute;
     height:100%;
     width:100%;
     top:0px;
     left:0px;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 1;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 #navbar ul li{
     
@@ -62,12 +69,14 @@ margin: 10px 34px;
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
-    color: white;
-
+    color: black;
+    font-family: 'Montserrat' , Sans-Serif;
+    font-weight: 600;
+    font-size: 12px;
 }
 #navbar ul li a:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 /* Home Section */
 #home{
@@ -89,18 +98,19 @@ margin: 10px 34px;
     opacity: 0.89;
     top:0px;
     left:0px;
-
+    filter: brightness(0.5);
 }
 #home h1{
-    color:white;
+    color: #f3ffa8;
     text-align: center;
-    font-family: 'Chilanka';
+    font-family: 'Montserrat' Sans-Serif;
 }
 #home p{
     color:white;
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Chilanka';
+    font-size: 10px;
+    font-family: 'Montserrat' , Sans-Serif;
+    text-shadow: 1px 1px 1px black;
 }
 /* Services Section  */
 #services{
@@ -110,11 +120,12 @@ margin: 10px 34px;
 }
  #services .box{
      padding-top:34px;
-    border: 2px solid brown;
+    border: 0px;
     padding:34px;
     margin: 3px 6px;
-    border-radius: 28px;
-    background: #f2f2f2;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 1px 1px 10px #dedede;
 
 }
 #services .box img{
@@ -136,6 +147,7 @@ margin: 10px 34px;
     height:100%;
     z-index: -1;
     opacity: .8;
+    filter: brightness(0.5);
     
 }
 #clients{
@@ -207,15 +219,20 @@ footer{
     padding: 12px;
 }
 .btn{
+    height: 50px;
+    width: 150px;
     padding: 6px 20px;
-    border: 2px solid white;
-    background-color:#b88989a8;;
-    color:white;
+    border: 2px solid black;
+    background-color: #f3ffa8;
+    color: black;
     margin: 17px;
-    font-size: 1.5rem ;
-    border-radius: 10px;
+    font-size: 14px;
+    border-radius: 50px;
     cursor: pointer;
+    font-family: 'Montserrat' , Sans-Serif;
+    font-weight: 600;
 }
 .center{
     text-align: center;
+    font-family: 'Montserrat' , Sans-Serif;
 }
